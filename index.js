@@ -266,11 +266,18 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(param) {
+  const vowels = ["a", "e", "i", "o", "u", "y"];
+  let numVowel = 0;
+    for(let i=0; i < param.length; i++){
+      if(vowels.includes(param[i])){
+        numVowel += 1;
+      }
+    }
+  return numVowel;
 }
 
-
+console.log(vowelCounter("tomorrow"));
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
